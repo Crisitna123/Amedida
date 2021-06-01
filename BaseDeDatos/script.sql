@@ -52,7 +52,7 @@ CREATE TABLE pedido(
 	idPedido int NOT NULL AUTO_INCREMENT,
 	fechaPedido DATETIME DEFAULT CURRENT_TIMESTAMP,
 	fechaEntrega DATETIME,
-	coste double(6),
+	coste DOUBLE,
 	numeroElementos int(5) NOT NULL,
 	estado VARCHAR(10),
 	CONSTRAINT pedido_id_PK PRIMARY KEY (idPedido)
@@ -61,8 +61,8 @@ CREATE TABLE pedido(
 
 --Realiza
 CREATE TABLE realiza(
-	idUsuario int NOT NULL AUTO_INCREMENT,
-	idPedido int NOT NULL AUTO_INCREMENT,
+	idUsuario int NOT NULL,
+	idPedido int NOT NULL,
 	CONSTRAINT realiza_idUsu_FK FOREIGN KEY (idUsuario) REFERENCES usuario(idUsuario),
 	CONSTRAINT realiza_idPed_FK FOREIGN KEY (idPedido) REFERENCES pedido(idPedido)
 );
@@ -91,16 +91,16 @@ CREATE TABLE serie(
 CREATE TABLE aMedida(
 	idArticulo int NOT NULL AUTO_INCREMENT,
 	precio_calculado int(5),
-	CONSTRAINT serie_idArt_FK FOREIGN KEY (idArticulo) REFERENCES articulo(idArticulo)
+	CONSTRAINT aMedida_idArt_FK FOREIGN KEY (idArticulo) REFERENCES articulo(idArticulo)
 );
 
 --Imagen
 CREATE TABLE imagen(
 	idArticulo int NOT NULL AUTO_INCREMENT,
 	imagen longblob NOT NULL,
-	CONSTRAINT imagen_PK PRIMARY KEY (imagen),
 	CONSTRAINT img_idArt_FK FOREIGN KEY (idArticulo) REFERENCES articulo(idArticulo)
 );
+
 
 
 --Contiene
@@ -114,17 +114,17 @@ CREATE TABLE contiene(
 
 --Adminsitra
 CREATE TABLE administra(
-	idUsuario int NOT NULL AUTO_INCREMENT,
-	idArticulo int NOT NULL AUTO_INCREMENT,
-	CONSTRAINT adm_idUsu_FK FOREIGN KEY (idUsuario) REFERENCES usuario(idUsuario),
-	CONSTRAINT adm_idArt_FK FOREIGN KEY (idArticulo) REFERENCES articulo(idArticulo)
+	idUsuario int NOT NULL,
+	idArticulo int NOT NULL,
+	CONSTRAINT admi_idUsu_FK FOREIGN KEY (idUsuario) REFERENCES usuario(idUsuario),
+	CONSTRAINT admi_idArt_FK FOREIGN KEY (idArticulo) REFERENCES articulo(idArticulo)
 );
 	
 
 --Medidas
 CREATE TABLE medidas(
-	idUsuario int NOT NULL AUTO_INCREMENT,
-	idArticulo int NOT NULL AUTO_INCREMENT,
+	idUsuario int NOT NULL,
+	idArticulo int NOT NULL,
 	contorno_cintura int(3),
 	ancho_espalda int(3),
 	largo_manga int(3),
@@ -143,6 +143,6 @@ CREATE TABLE medidas(
 	largo_rodilla int(3),
 	largo_pantalon int(3),
 	largo_tiro int(3),
-	CONSTRAINT adm_idUsu_FK FOREIGN KEY (idUsuario) REFERENCES usuario(idUsuario),
-	CONSTRAINT adm_idArt_FK FOREIGN KEY (idArticulo) REFERENCES articulo(idArticulo)
+	CONSTRAINT medidas_idUsu_FK FOREIGN KEY (idUsuario) REFERENCES usuario(idUsuario),
+	CONSTRAINT medidas_idArt_FK FOREIGN KEY (idArticulo) REFERENCES articulo(idArticulo)
 );
