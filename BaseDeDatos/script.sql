@@ -94,6 +94,15 @@ CREATE TABLE aMedida(
 	CONSTRAINT serie_idArt_FK FOREIGN KEY (idArticulo) REFERENCES articulo(idArticulo)
 );
 
+--Imagen
+CREATE TABLE imagen(
+	idArticulo int NOT NULL AUTO_INCREMENT,
+	imagen longblob NOT NULL,
+	CONSTRAINT imagen_PK PRIMARY KEY (imagen),
+	CONSTRAINT img_idArt_FK FOREIGN KEY (idArticulo) REFERENCES articulo(idArticulo)
+);
+
+
 --Contiene
 CREATE TABLE contiene(
 	idArticulo int NOT NULL AUTO_INCREMENT,
