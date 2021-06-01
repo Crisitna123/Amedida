@@ -33,7 +33,7 @@ CREATE TABLE cliente(
 --Administrador
 CREATE TABLE administrador(
 	idUsuario int NOT NULL AUTO_INCREMENT,
-	dni VARCHAR(8) NOT NULL,
+	dni VARCHAR(9) NOT NULL,
 	CONSTRAINT adm_idUsu_FK FOREIGN KEY (idUsuario) REFERENCES usuario(idUsuario)	
 );
 
@@ -55,7 +55,10 @@ CREATE TABLE pedido(
 	coste DOUBLE,
 	numeroElementos int(5) NOT NULL,
 	estado VARCHAR(10),
-	CONSTRAINT pedido_id_PK PRIMARY KEY (idPedido)
+	idCodigo int(6),
+	descuento int(3),
+	CONSTRAINT pedido_id_PK PRIMARY KEY (idPedido),
+	CONSTRAINT pedido_codigo_UK UNIQUE (idCodigo)
 );
 
 
