@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Mujer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <!--Cabecera-->
+            <div class="container-fluid" name="cabecera">
+                <img src="img/Imagenes/logo3.png" class="mx-auto d-block">
+            </div>
+        </header>
+
+            <!--Barra de navegación-->
+        <nav class="navbar navbar-expand-lg justify-content-around text-center" style="border: solid 1px;">
+                    
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+              
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto ml-auto w-100 justify-content-around">
+
+                    <li class="nav-item" >
+                        <a class="nav-link" style="color: #B8A076;" href="mujer.html">Mujer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #B8A076;" href="hombre.html">Hombre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #B8A076;" href="infantil.html">Infantil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #B8A076;" href="aMedida.html">Añadir medidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #B8A076;" href="perfil.html">Perfil</a>
+                    </li>    
+                </ul>
+            </div>
+            <a class="carrito"  style="color: #B8A076;"  href="cesta.html"><img src="img/Imagenes/miBolsa3.png"></a>
+        </nav>
+    
+        <main>
+          <div class="container" id="contenidoPrincipal">
+            <div class="row justify-content-center ">
+                <!-- Nav tabs -->
+                <section>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item waves-effect waves-light">
+                            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo" role="tab" aria-controls="todo" aria-selected="true">Todo</a>
+                          </li>
+                      <li class="nav-item waves-effect waves-light">
+                        <a class="nav-link" id="novia-tab" data-toggle="tab" href="#novia" role="tab" aria-controls="novia" aria-selected="false">Novia</a>
+                      </li>
+                      <li class="nav-item waves-effect waves-light">
+                        <a class="nav-link" id="fiesta-tab" data-toggle="tab" href="#fiesta" role="tab" aria-controls="fiesta" aria-selected="false">Fiesta</a>
+                      </li>
+                      <li class="nav-item waves-effect waves-light">
+                          <a class="nav-link" id="madrina-tab" data-toggle="tab" href="#madrina" role="tab" aria-controls="madrina" aria-selected="false">Madrina</a>
+                      </li>
+                      
+                    </ul>
+
+                    <!--Contenido dentro de las nav-tabs-->
+                    <div class="tab-content" id="myTabContent" style="border: 1px solid grey;">
+                        <!--Todo-->
+                        <div class="tab-pane fade active show" id="todo" role="tabpanel" aria-labelledby="todo-tab">
+                            <div class="row justify-content-around">
+                                <div class="card col-12 col-md-6 col-xl-3 mt-4" style="width:400px; border: 1px solid gray; background-color: #BAB8A9;">
+                                    <img class="card-img-top mt-2" src="img/Mujer/prueba2.png" alt="Vestido">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Vestido fantasía</h4>
+                                      <p class="card-text">500€</p>
+                                      <a href="#" class="btn btn-primary" >Comprar</a>
+                                    </div>
+                                  </div>
+
+                                  <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                    <img class="card-img-top mt-2" src="img/Mujer/prueba2.png" alt="Vestido">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Vestido fantasía</h4>
+                                      <p class="card-text">500€</p>
+                                      <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                  </div>
+
+                                  <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                    <img class="card-img-top mt-2" src="img/Mujer/prueba2.png" alt="Vestido">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Vestido fantasía</h4>
+                                      <p class="card-text">500€</p>
+                                      <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                  </div>
+
+                                  <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                    <img class="card-img-top mt-2" src="img/Mujer/prueba2.png" alt="Vestido">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Vestido fantasía</h4>
+                                      <p class="card-text">500€</p>
+                                      <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                  </div>
+
+                                  <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                    <img class="card-img-top mt-2" src="img/Mujer/prueba2.png" alt="Vestido">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Vestido fantasía</h4>
+                                      <p class="card-text">500€</p>
+                                      <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                  </div>
+
+                                  <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                    <img class="card-img-top mt-2" src="img/Mujer/prueba2.png" alt="Vestido">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Vestido fantasía</h4>
+                                      <p class="card-text">500€</p>
+                                      <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!--Novia-->
+                      <div class="tab-pane fade" id="novia" role="tabpanel" aria-labelledby="novia-tab">
+                        <div class="row justify-content-around">
+                            <div class="card col-12 col-md-6 col-xl-3 mt-4" style="width:400px; border: 1px solid gray;">
+                                <img class="card-img-top mt-2" src="img/Mujer/prueba2.png" alt="Vestido">
+                                <div class="card-body">
+                                  <h4 class="card-title">Vestido fantasía</h4>
+                                  <p class="card-text">500€</p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                              </div>
+
+                              <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                <img class="card-img-top mt-2" src="img/Mujer/prueba2.png" alt="Vestido">
+                                <div class="card-body">
+                                  <h4 class="card-title">Vestido fantasía</h4>
+                                  <p class="card-text">500€</p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                              </div>
+
+                              <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                <img class="card-img-top mt-2" src="img/Mujer/prueba2.png" alt="Vestido">
+                                <div class="card-body">
+                                  <h4 class="card-title">Vestido fantasía</h4>
+                                  <p class="card-text">500€</p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                              </div>
+
+                              <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                <img class="card-img-top mt-2" src="img/Mujer/prueba2.png" alt="Vestido">
+                                <div class="card-body">
+                                  <h4 class="card-title">Vestido fantasía</h4>
+                                  <p class="card-text">500€</p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                              </div>
+
+                              <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                <img class="card-img-top mt-2" src="img/Mujer/prueba2.png" alt="Vestido">
+                                <div class="card-body">
+                                  <h4 class="card-title">Vestido fantasía</h4>
+                                  <p class="card-text">500€</p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                              </div>
+
+                              <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                <img class="card-img-top mt-2" src="img/Mujer/prueba2.png" alt="Vestido">
+                                <div class="card-body">
+                                  <h4 class="card-title">Vestido fantasía</h4>
+                                  <p class="card-text">500€</p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <!--Fiesta-->
+                      <div class="tab-pane fade" id="fiesta" role="tabpanel" aria-labelledby="fiesta-tab">
+                        <div class="row justify-content-around">
+                            <div class="card col-12 col-md-6 col-xl-3 mt-4" style="width:400px; border: 1px solid gray;">
+                                <img class="card-img-top mt-2" src="img/Mujer/fiesta1.png" alt="Vestido">
+                                <div class="card-body">
+                                  <h4 class="card-title">Vestido largo con abertura</h4>
+                                  <p class="card-text">200€</p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                              </div>
+
+                              <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                <img class="card-img-top mt-2" src="img/Mujer/fiesta1.png" alt="Vestido">
+                                <div class="card-body">
+                                  <h4 class="card-title">Vestido largo con abertura</h4>
+                                  <p class="card-text">200€</p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                              </div>
+
+                              <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                <img class="card-img-top mt-2" src="img/Mujer/fiesta1.png" alt="Vestido">
+                                <div class="card-body">
+                                  <h4 class="card-title">Vestido largo con abertura</h4>
+                                  <p class="card-text">200€</p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                              </div>
+
+                              <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                <img class="card-img-top mt-2" src="img/Mujer/fiesta1.png" alt="Vestido">
+                                <div class="card-body">
+                                  <h4 class="card-title">Vestido largo con abertura</h4>
+                                  <p class="card-text">200€</p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                              </div>
+
+                              <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                <img class="card-img-top mt-2" src="img/Mujer/fiesta1.png" alt="Vestido">
+                                <div class="card-body">
+                                  <h4 class="card-title">Vestido largo con abertura</h4>
+                                  <p class="card-text">200€</p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                              </div>
+
+                              <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                <img class="card-img-top mt-2" src="img/Mujer/fiesta1.png" alt="Vestido">
+                                <div class="card-body">
+                                  <h4 class="card-title">Vestido largo con abertura</h4>
+                                  <p class="card-text">200€</p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <!--Madrina-->
+                        <div class="tab-pane fade" id="madrina" role="tabpanel" aria-labelledby="madrina-tab">
+                            <div class="row justify-content-around">
+                                <div class="card col-12 col-md-6 col-xl-3 mt-4" style="width:400px; border: 1px solid gray;">
+                                    <img class="card-img-top mt-2" src="img/Mujer/madrina1.png" alt="Vestido">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Vestido corto con encaje</h4>
+                                      <p class="card-text">300€</p>
+                                      <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                  </div>
+    
+                                  <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                    <img class="card-img-top mt-2" src="img/Mujer/madrina1.png" alt="Vestido">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Vestido corto con encaje</h4>
+                                      <p class="card-text">300€</p>
+                                      <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                  </div>
+    
+                                  <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                    <img class="card-img-top mt-2" src="img/Mujer/madrina1.png" alt="Vestido">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Vestido corto con encaje</h4>
+                                      <p class="card-text">300€</p>
+                                      <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                  </div>
+    
+                                  <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                    <img class="card-img-top mt-2" src="img/Mujer/madrina1.png" alt="Vestido">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Vestido corto con encaje</h4>
+                                      <p class="card-text">300€</p>
+                                      <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                  </div>
+    
+                                  <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                    <img class="card-img-top mt-2" src="img/Mujer/madrina1.png" alt="Vestido">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Vestido corto con encaje</h4>
+                                      <p class="card-text">300€</p>
+                                      <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                  </div>
+    
+                                  <div class="card col-12 col-md-6 col-xl-3 mt-4 ml-1" style="width:400px; border: 1px solid gray;">
+                                    <img class="card-img-top mt-2" src="img/Mujer/madrina1.png" alt="Vestido">
+                                    <div class="card-body">
+                                      <h4 class="card-title">Vestido corto con encaje</h4>
+                                      <p class="card-text">300€</p>
+                                      <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div> 
+          </div>
+            
+    
+    
+    
+        </main>
+        <footer>
+            <div class="container">
+                <br><br>
+              <div class="row justify-content-around" id="footer">
+                
+                <div class="col-md-12 col-sm-6" style="border: 1px solid #BAB8A9; margin-top: 2em; padding: 5em; margin-bottom: 2em; text-align: center;">
+                    <a href="https://www.google.es/"> 
+                        <img src="img/Imagenes/google.png" class="rounded " alt="Google"> 
+                    </a>
+                    <a href="https://es-es.facebook.com/">
+                        <img src="img/Imagenes/facebook.png" class="rounded " alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com/?lang=es">
+                        <img src="img/Imagenes/twitter.png" class="rounded " alt="Twitter">
+                    </a>
+                    
+                    <h5 id="contacto">Contacta con nosotros en 123cristy@gmail.com</h5>
+                </div>
+              </div>
+              </div>
+        </footer>
+
+    </body>
+    
+</html>

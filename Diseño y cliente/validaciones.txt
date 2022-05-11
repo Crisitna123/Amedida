@@ -1,0 +1,35 @@
+//Funcion para validar el email del index
+
+function validarEmail(){
+    var email= document.getElementById("email").value;
+    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(email))) {
+        document.getElementById("errorEmail").innerHTML = "  El email está incorrecto";
+        return false;
+    } else {
+        document.getElementById("errorEmail").innerHTML = "";
+        return true;
+    }
+}
+
+function validar(){
+    validarEmail();
+    validarContraseña();
+    if((validarEmail()==true) && (validarContraseña()==true)){
+        return true;
+    }else{
+        return false;
+    }
+    
+}
+
+function validarContraseña(){
+    var contraseña= document.getElementById("password").value;
+    if(!(/^[A-Za-z0-9_-]{6,20}$/.test(contraseña))){
+        document.getElementById("errorContraseña").innerHTML= "  La contraseña es incorrecta";
+        return false;
+    } else{
+        document.getElementById("errorContraseña").innerHTML= "";
+        return true;
+    }
+
+}

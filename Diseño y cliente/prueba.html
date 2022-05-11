@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Mujer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        
+        
+
+        <style>
+            
+            nav.navbar {
+                background-color:#1E1E23;
+            }
+            .custom-toggler.navbar-toggler {
+                border-color: #B8A076;
+            } 
+            .custom-toggler .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(184, 160, 118, 100)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+            }
+            #filtros{
+              background-color: #BAB8A9;
+            }
+            
+            .card{
+                background-color: #BAB8A9;
+            }
+            main{
+                padding-bottom: 20px;
+                background-color: #BAB8A9;
+                
+            }
+            #guia{
+              max-width: 500px;
+              max-height: 500px;
+            }
+            footer{
+                background-color: #1E1E23;
+            }
+            #contacto{
+                margin-top: 5px;
+                color: #B8A076;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!--Cabecera-->
+            <div class="container-fluid" name="cabecera">
+                <img src="img/logo3.png" class="mx-auto d-block">
+            </div>
+        </header>
+
+            <!--Barra de navegación-->
+        <nav class="navbar navbar-expand-lg justify-content-around text-center" style="border: solid 1px;">
+                    
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+              
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto ml-auto w-100 justify-content-around">
+
+                    <li class="nav-item" >
+                        <a class="nav-link" style="color: #B8A076;" href="mujer.html">Mujer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #B8A076;" href="hombre.html">Hombre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #B8A076;" href="infantil.html">Infantil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #B8A076;" href="aMedida.html">Añadir medidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #B8A076;" href="#">Perfil</a>
+                    </li>    
+                </ul>
+            </div>
+            <a class="carrito"  style="color: #B8A076;"  href="#cesta"><img src="img/miBolsa3.png"></a>
+        </nav>
+    
+        <main>
+          <div class="container-fluid" name="guia" id="guia">
+            <img src="img/guia2.png" class="mx-auto d-block" alt="guia de como tomar las medidas">
+          </div>
+          <div class="container mt-4">
+            <h5>Introduce tus medidas en cm</h5>
+            <p>Es mejor que las introduzcas todas, pero no es obligatorio</p>
+            <form class="form" action="aMedida.html" method="post">
+              <div class="row" id="medidas">
+                <div class="col-12 col-xl-6">
+                  <div class="form-group row justify-content-center">
+                    <label for="nombre" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Nombre</label>
+                      <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="nombre" >
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="contornoCuello" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Contorno cuello</label>
+                      <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="contornoCuello">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="contornoPecho" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Contorno pecho</label>
+                    <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="contornoPecho">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="contornoSisa" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Contorno sisa</label>
+                    <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="contornoSisa">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="contornoCintura" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Contorno cintura</label>
+                      <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="contornoCintura">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="contornoCadera" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Contorno cadera</label>
+                    <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="contornoCadera">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="largoTalleDelantero" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Largo talle delantero</label>
+                    <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="largoTalleDelantero">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="largoTalleTrasero" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Largo talle trasero</label>
+                    <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="largoTalleTrasero">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="tallePecho" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Talle pecho</label>
+                    <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="tallePecho">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="talleCintura" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Talle cintura</label>
+                    <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="talleCintura">
+                  </div>
+
+                </div>
+                <div class="col-12 col-xl-6">
+                  <div class="form-group row justify-content-center">
+                    <label for="talleCadera" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4 ">Talle cadera</label>
+                        <input type="text" class="form-control col-12 col-sm-6 col-lg-3"  name="talleCadera">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="anchoEspalda" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4 ">Ancho espalda</label>
+                        <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="anchoEspalda">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="largoHombro" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4 ">Largo hombro</label>
+                        <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="largoHombro">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="largoManga" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4 ">Largo manga</label>
+                        <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="largoManga">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="largoRodilla" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4 ">Largo rodilla</label>
+                        <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="largoRodilla">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="largoTiro" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4 ">Largo tiro</label>
+                        <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="largoTiro">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="largoPierna" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4 ">Largo pierna</label>
+                        <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="largoPierna">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="largoPantalon" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4 ">Largo pantalón</label>
+                        <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="largoPantalon">
+                  </div>
+
+                  <div class="form-group row justify-content-center">
+                    <label for="largoTotal" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4 ">Largo total</label>
+                        <input type="text" class="form-control col-12 col-sm-6 col-lg-3" name="largoTotal">
+                  </div>
+
+                </div>
+              </div>
+              <div class="form-group row justify-content-center">
+                <button type="button" class="btn btn-primary btn-md mt-2 ml-xl-2" style="margin-left: 200px;">Guardar</button>  
+            </div>
+            </form>
+            
+          </div>
+        </main>
+        <footer>
+            <div class="container">
+                <br><br>
+              <div class="row justify-content-around" id="footer">
+                
+                <div class="col-md-12 col-sm-6" style="border: 1px solid #BAB8A9; margin-top: 2em; padding: 5em; margin-bottom: 2em; text-align: center;">
+                    <a href="https://www.google.es/"> 
+                        <img src="img/google.png" class="rounded " alt="Google"> 
+                    </a>
+                    <a href="https://es-es.facebook.com/">
+                        <img src="img/facebook.png" class="rounded " alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com/?lang=es">
+                        <img src="img/twitter.png" class="rounded " alt="Twitter">
+                    </a>
+                    
+                    <h4 id="contacto">Contacta con nosotros en 123crsty@gmail.com</h4>
+                </div>
+              </div>
+              </div>
+        </footer>
+
+    </body>
+    
+</html>

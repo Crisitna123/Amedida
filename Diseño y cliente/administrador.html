@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Administrador</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <!--Cabecera-->
+            <div class="container-fluid" name="cabecera">
+                <img src="img/Imagenes/logo3.png" class="mx-auto d-block">
+            </div>
+        </header>
+
+            
+    
+        <main>
+            <div class="container" id="contenidoPrincipal">
+                <div class="row justify-content-center ">
+                    <!-- Nav tabs -->
+                    <section>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item waves-effect waves-light">
+                                <a class="nav-link active" id="añadir-tab" data-toggle="tab" href="#añadir" role="tab" aria-controls="añadir" aria-selected="true">Añadir artículo</a>
+                            </li>
+                            <li class="nav-item waves-effect waves-light">
+                                <a class="nav-link" id="eliminar-tab" data-toggle="tab" href="#eliminar" role="tab" aria-controls="eliminar" aria-selected="false">Eliminar artículo</a>
+                            </li>
+                            <li class="nav-item waves-effect waves-light">
+                                <a class="nav-link" id="pedidos-tab" data-toggle="tab" href="#pedidos" role="tab" aria-controls="pedidos" aria-selected="false">Ver pedidos</a>
+                            </li>
+                        </ul>
+
+                        <!--Contenido dentro de las nav-tabs-->
+                        <div class="tab-content" id="myTabContent" style="border: 1px solid grey;">
+                            <!--Añadir artículo-->
+                            <div class="tab-pane fade active show" id="añadir" role="tabpanel" aria-labelledby="añadir-tab">
+                                <div class="container mt-4">
+                                    <form class="form" action="administrador.html" method="post">
+                                        <div class="form-group row">
+                                            <label for="nombre" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4">Nombre</label>
+                                            <input type="text" class="form-control col-12 col-sm-6 col-lg-4" name="nombre" >
+                                        </div>
+        
+                                        <div class="form-group row ">
+                                            <label for="categoria" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Categoría</label>
+                                            <select class="form-control col-12 col-sm-6 col-lg-4" name="categoria" id="selectCategoria">
+                                                <option value="mujer">Mujer</option>
+                                                <option value="hombre">Hombre</option>
+                                                <option value="infantil">Infantil</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group row ">
+                                            <label for="tipo" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Tipo</label>
+                                            <select class="form-control col-12 col-sm-6 col-lg-4" name="tipo" id="selectTipo">
+                                                <optgroup label="Mujer">
+                                                    <option value="novia">Novia</option>
+                                                    <option value="fiesta">Fiesta</option>
+                                                    <option value="madrina">Madrina</option>
+                                                </optgroup>
+                                                <optgroup label="Hombre">
+                                                    <option value="novio">Novio</option>
+                                                    <option value="traje">Traje</option>
+                                                </optgroup>
+                                                <optgroup label="Infantil">
+                                                    <option value="niña">Niña</option>
+                                                    <option value="niño">Niño</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group row ">
+                                            <label for="color" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Color</label>
+                                            <select class="form-control col-12 col-sm-6 col-lg-4" name="color" id="selectColor">
+                                                <option value="rojo">Rojo</option>
+                                                <option value="blanco">Blanco</option>
+                                                <option value="negro">Negro</option>
+                                                <option value="gris">Gris</option>
+                                                <option value="azul">Azul</option>
+                                                <option value="verde">Verde</option>
+                                                <option value="rosa">Rosa</option>
+                                                <option value="naranja">Naranja</option>
+                                                <option value="Morado">Morado</option>
+                                            </select>
+                                        </div>
+                    
+                                        <div class="form-group row ">
+                                            <label for="precio" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Precio</label>
+                                            <input type="number" class="form-control col-12 col-sm-6 col-lg-4" name="precio" id="precio">
+                                        </div>
+                    
+                                        <div class="form-group row ">
+                                            <label for="imagen" class="negrita col-12 col-sm-4 text-sm-right col-lg-3 col-xl-4  ">Selecciona una imágen</label>
+                                            <input type="file" class="form-control col-12 col-sm-6 col-lg-6" accept="image/png" id="imagen">
+                                        </div>
+                                        <div class="form-group row justify-content-center">
+                                            <button type="button" class="btn btn-primary btn-md mt-2 ml-xl-2" name="añadir">Añadir</button>  
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!--Eliminar artículo-->
+                            <div class="tab-pane fade" id="eliminar" role="tabpanel" aria-labelledby="eliminar-tab">
+                                <div class="table-responsive-sm" id="eliminar">          
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>IdArtículo</th>
+                                                <th>Nombre</th>
+                                                <th>Categoría</th>
+                                                <th>Tipo</th>
+                                                <th>Color</th>
+                                                <th>Precio</th>
+                                                <th>Imagen</th>
+                                                <th>Opciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Vestido fantasía</td>
+                                                <td>Mujer</td>
+                                                <td>Novia</td>
+                                                <td>Blanco</td>
+                                                <td>500€</td>
+                                                <td>img/Mujer/prueba2.png</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-danger btn-md mt-2 -l-xl-2" name="eliminar" id="eliminar">Eliminar</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Traje gris</td>
+                                                <td>Hombre</td>
+                                                <td>Traje</td>
+                                                <td>Gris</td>
+                                                <td>150€</td>
+                                                <td>img/Hombre/traje1.png</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-danger btn-md mt-2 -l-xl-2" name="eliminar" id="eliminar">Eliminar</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>    
+                            <!--Ver pedidos-->
+                            <div class="tab-pane fade" id="pedidos" role="tabpanel" aria-labelledby="pedidos-tab">
+                                <div class="table-responsive-sm" id="pedidos">          
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>IdPedido</th>
+                                                <th>IdArticulo</th>
+                                                <th>Nombre articulo</th>
+                                                <th>IdCliente</th>
+                                                <th>Nombre cliente</th>
+                                                <th>IdMedidas</th>
+                                                <th>Fecha pedido</th>
+                                                <th>Estado</th>
+                                                <th>Opciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>Vestido fantasía</td>
+                                                <td>1</td>
+                                                <td>Cristina</td>
+                                                <td>1</td>
+                                                <td>15/03/2022</td>
+                                                <td>En proceso</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-danger btn-md mt-2 -l-xl-2" name="eliminar" id="eliminar">Finalizar</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>2</td>
+                                                <td>Traje gris</td>
+                                                <td>1</td>
+                                                <td>Cristina</td>
+                                                <td>2</td>
+                                                <td>13/03/2022</td>
+                                                <td>En proceso</td>
+                                                <td>
+                                                    <button type="button" class="btn btn-danger btn-md mt-2 -l-xl-2" name="eliminar" id="eliminar">Finalizar</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div> 
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <br><br>
+              <div class="row justify-content-around" id="footer">
+                
+                <div class="col-md-12 col-sm-6" style="border: 1px solid #BAB8A9; margin-top: 2em; padding: 5em; margin-bottom: 2em; text-align: center;">
+                    <a href="https://www.google.es/"> 
+                        <img src="img/Imagenes/google.png" class="rounded " alt="Google"> 
+                    </a>
+                    <a href="https://es-es.facebook.com/">
+                        <img src="img/Imagenes/facebook.png" class="rounded " alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com/?lang=es">
+                        <img src="img/Imagenes/twitter.png" class="rounded " alt="Twitter">
+                    </a>
+                    
+                    <h5 id="contacto">Contacta con nosotros en 123cristy@gmail.com</h5>
+                </div>
+              </div>
+              </div>
+        </footer>
+
+    </body>
+    
+</html>
